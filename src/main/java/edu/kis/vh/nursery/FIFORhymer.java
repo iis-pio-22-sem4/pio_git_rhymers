@@ -19,3 +19,4 @@ public class FIFORhymer extends defaultCountingOutRhymer {
         return ret;
     }
 }
+//alt+-> przesuwa widok projektu w intelliju w prawo natomiast alt+<- przesuwa ten widok w lewo
