@@ -1,0 +1,5 @@
+# Ignore bin system files
+bin/
+*.target
+.idea
+#I hope it will work :P
