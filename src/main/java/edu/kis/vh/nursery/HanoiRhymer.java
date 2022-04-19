@@ -1,8 +1,8 @@
 package edu.kis.vh.nursery;
 
 public class HanoiRhymer extends defaultCountingOutRhymer {
-
-int totalRejected = 0;
+	//5 wiersz byl zle sformatowany
+	int totalRejected = 0;
 
 	public int reportRejected() {
 		return totalRejected;
@@ -15,3 +15,4 @@ int totalRejected = 0;
 				super.countIn(in);
 	}
 }
+//
