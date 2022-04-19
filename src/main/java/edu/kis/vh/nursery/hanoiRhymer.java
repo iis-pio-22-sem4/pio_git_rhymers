@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery;
 
-public class HanoiRhymer extends defaultCountingOutRhymer {
+public class hanoiRhymer extends defaultCountOutRhymer {
 	//5 wiersz byl zle sformatowany
 	int totalRejected = 0;
 
