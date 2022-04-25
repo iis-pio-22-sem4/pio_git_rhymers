@@ -4,9 +4,10 @@ public class DefaultCountingOutRhymer {
 
 	public static final int SIZE = 12;
 	public static final int FULL = 11;
+	public static final int START = -1;
 	private final int[] numbers = new int[SIZE];
 
-	public int total = -1;
+	public int total = START;
 
 	public void countIn(int in) {
 		if (!isFull())
