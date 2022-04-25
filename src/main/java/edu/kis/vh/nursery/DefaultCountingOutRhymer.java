@@ -4,7 +4,7 @@ public class DefaultCountingOutRhymer {
 
   public static final int MAX = 11;
   public static final int TABLE_SIZE = 12;
-  private int[] NUMBERS = new int[TABLE_SIZE];
+  private final int[] NUMBERS = new int[TABLE_SIZE];
   public static final int ERROR = -1;
   public static final int CALLCHECK_FAIL = -1;
 
