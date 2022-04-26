@@ -10,7 +10,7 @@ public class DefaultCountingOutRhymer {
     private final int[] numbers = new int[SIZE];
 
     private int total = -1;
-    
+
     public int getTotal() {
         return total;
     }
