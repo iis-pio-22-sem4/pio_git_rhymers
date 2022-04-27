@@ -5,7 +5,7 @@ public class DefaultCountingOutRhymer {
     public static final int NUMBERS_ARR_INIT_SIZE = 12;
     public static final int ERR_CODE = -1;
     public static final int MAX_STACK_CAPACITY = 11;
-    private int[] numbers = new int[NUMBERS_ARR_INIT_SIZE];
+    private final int[] numbers = new int[NUMBERS_ARR_INIT_SIZE];
 
     public int total = ERR_CODE;
 
