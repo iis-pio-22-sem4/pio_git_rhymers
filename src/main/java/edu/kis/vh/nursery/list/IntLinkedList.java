@@ -5,35 +5,51 @@ public class IntLinkedList {
 	private Node last;
 	private int i;
 
-	private void push(int i) {
-		if (last == null)
-			last = new Node(i);
+	public void push(int i) {
+		if (getLast() == null)
+			setLast(new Node(i));
 		else {
-			last.next = new Node(i);
-			last.next.prev = last;
-			last = last.next;
+			getLast().next = new Node(i);
+			getLast().next.setPrev(getLast());
+			setLast(getLast().next);
 		}
 	}
 
-	private boolean isEmpty() {
-		return last == null;
+	public boolean isEmpty() {
+		return getLast() == null;
 	}
 
-	private boolean isFull() {
+	public boolean isFull() {
 		return false;
 	}
 
-	private int top() {
+	public int top() {
 		if (isEmpty())
 			return -1;
-		return last.value;
+		return getLast().getValue();
 	}
 
-	private int pop() {
+	public int pop() {
 		if (isEmpty())
 			return -1;
-		int ret = last.value;
-		last = last.prev;
+		int ret = getLast().getValue();
+		setLast(getLast().getPrev());
 		return ret;
+	}
+
+	public Node getLast() {
+		return last;
+	}
+
+	public void setLast(Node last) {
+		this.last = last;
+	}
+
+	public int getI() {
+		return i;
+	}
+
+	public void setI(int i) {
+		this.i = i;
 	}
 }
