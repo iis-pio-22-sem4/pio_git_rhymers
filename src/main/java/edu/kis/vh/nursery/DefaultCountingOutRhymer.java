@@ -2,10 +2,14 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-	public static final int SIZE = 12; // zostawiam jako public aby size jakby byl do podlgadu
+	private static final int SIZE = 12;
 	private static final int FULL = 11;
 	private static final int START = -1;
-	private final int[] numbers = new int[SIZE];
+	private final int[] numbers = new int[getSIZE()];
+
+	public static int getSIZE() {
+		return SIZE;
+	}
 
 	public int getTotal() {
 		return total;
