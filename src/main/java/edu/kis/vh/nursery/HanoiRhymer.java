@@ -4,7 +4,7 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 
 	private int totalRejected = 0; // brak tab w linii 5
 
-	public int reportRejected() {
+	public final int reportRejected() {
 		return totalRejected;
 	}
 

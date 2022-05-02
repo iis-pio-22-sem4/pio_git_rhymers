@@ -4,12 +4,13 @@ public class DefaultCountingOutRhymer {
 
 	private static final int ARRAY_CAPACITY = 12;
 	private static final int ARRAY_EMPTY = -1;
+	private static final int START_VALUE = -1;
 	private static final int ARRAY_FULL = 11;
 	private final int[] numbers = new int[ARRAY_CAPACITY];
 
-	private int total = ARRAY_EMPTY;
+	private int total = START_VALUE;
 
-	public int getTotal() {
+	private int getTotal() {
 		return total;
 	}
 
@@ -18,15 +19,15 @@ public class DefaultCountingOutRhymer {
 			numbers[++total] = in;
 	}
 
-	public boolean callCheck() {
+	public final boolean callCheck() {
 			return total == ARRAY_EMPTY;
 		}
 		
-	public boolean isFull() {
+	public final boolean isFull() {
 		return total == ARRAY_FULL;
 	}
 
-	protected int peekaboo() {
+	protected final int peekaboo() {
 		if (callCheck())
 			return ARRAY_EMPTY;
 		return numbers[total];
