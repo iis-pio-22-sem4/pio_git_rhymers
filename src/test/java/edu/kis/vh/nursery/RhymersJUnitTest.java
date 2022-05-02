@@ -76,3 +76,4 @@ public class RhymersJUnitTest {
 	}
 
 }
+// testy jednostkowe działają !!
