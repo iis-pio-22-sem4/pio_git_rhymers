@@ -2,6 +2,8 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
+  //hermetyzacja nieprywatnych atrybutów
+
   private static final int MAX = 11;
   private static final int TABLE_SIZE = 12;
   private final int[] NUMBERS = new int[TABLE_SIZE];
