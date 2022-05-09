@@ -3,8 +3,15 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.Rhymersfactory;
 
-class RhymersDemo {
+/**
+ * @description Simple application that creates Rhymers.
+ */
 
+class RhymersDemo {
+	/**
+	 * @description Creating object of the Rhymersfactory interface which belongs to DefaultRhymersFactory class and testing it.
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Rhymersfactory factory = new DefaultRhymersFactory();
 
@@ -13,6 +20,12 @@ class RhymersDemo {
 	}
 
 	//Testy walidacyjne zdane.
+
+	/**
+	 *
+	 * @description Testing usage of Rhymersfactory interface and DefaultRhymersFactory class.
+	 * @param factory
+	 */
 	private static void testRhymers(Rhymersfactory factory) {
 		DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
 				factory.getFIFORhymer(), factory.getHanoiRhymer()};
