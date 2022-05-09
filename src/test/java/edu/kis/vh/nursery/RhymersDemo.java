@@ -5,6 +5,10 @@ import edu.kis.vh.nursery.factory.Rhymersfactory;
 
 class RhymersDemo {
 
+	/**
+	 * @description firstly creating object factory (of type Rhymersfactory from interface Rhymersfactory, then launching testRhymers method
+	 * @param args arguments of main method are strings
+	 */
 	public static void main(String[] args) {
 		Rhymersfactory factory = new DefaultRhymersFactory();
 
@@ -14,6 +18,10 @@ class RhymersDemo {
 
 	//Walidacja projektu testami przebiegla pomyslnie
 
+	/**
+	 * @description testing usage and printing it to user
+	 * @param factory argument of method testRhymers is of type Rhymersfactory
+	 */
 	private static void testRhymers(Rhymersfactory factory) {
 		DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
 				factory.getFIFORhymer(), factory.getHanoiRhymer()};
