@@ -2,15 +2,11 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-  //hermetyzacja nieprywatnych atrybutów
-
-  private static final int MAX = 11;
+  private static final int MAX_TABLE = 11;
   private static final int TABLE_SIZE = 12;
-  private final int[] NUMBERS = new int[TABLE_SIZE];
-  private static final int ERROR = -1;
-  private static final int CALL_CHECK_FAIL = -1;
-
-  private int total = ERROR;
+  private static final int EMPTY_TABLE = -1;
+  private final int[] numbers = new int[TABLE_SIZE];
+  private int total = EMPTY_TABLE;
 
   public int getTotal() {
     return total;
@@ -18,27 +14,27 @@ public class DefaultCountingOutRhymer {
 
   public void countIn(int in) {
     if (!isFull())
-      NUMBERS[++total] = in;
+      numbers[++total] = in;
   }
 
   public boolean callCheck() {
-    return total == ERROR;
+    return total == EMPTY_TABLE;
   }
 
   public boolean isFull() {
-    return total == MAX;
+    return total == MAX_TABLE;
   }
 
   protected int peekaboo() {
     if (callCheck())
-      return CALL_CHECK_FAIL;
-    return NUMBERS[total];
+      return EMPTY_TABLE;
+    return numbers[total];
   }
 
   public int countOut() {
     if (callCheck())
-      return CALL_CHECK_FAIL;
-    return NUMBERS[total--];
+      return EMPTY_TABLE;
+    return numbers[total--];
   }
 
 }
