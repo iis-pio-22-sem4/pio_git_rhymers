@@ -8,6 +8,8 @@ public class DefaultCountingOutRhymer {
   private final int[] numbers = new int[TABLE_SIZE];
   private int total = EMPTY_TABLE;
 
+  //TODO: nazwa funkcji sugeruje że zwraca ilość elementów, jednak zwraca ona index ostatniego elementu
+
   public int getTotal() {
     return total;
   }
@@ -24,6 +26,8 @@ public class DefaultCountingOutRhymer {
   public boolean isFull() {
     return total == MAX_TABLE;
   }
+
+  //TODO: Nazwa funkcji w żaden sposób nie informuje o tym za do odpowiada
 
   protected int peekaboo() {
     if (callCheck())
